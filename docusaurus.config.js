@@ -8,7 +8,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "공부 내용 정리하기",
+  title: "지용이의 제텔카스텐 프로젝트",
   tagline: "화이팅",
   favicon: "img/favicon.ico",
 
