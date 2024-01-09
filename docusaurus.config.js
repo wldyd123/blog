@@ -8,15 +8,15 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "지용이의 제 2의 뇌",
-  tagline: "화이팅",
-  favicon: "img/favicon.ico",
+  title: "지용의 제 2의 뇌",
+  tagline: "",
+  favicon: "staticimg\favicon.ico",
 
   // Set the production url of your site here
   url: "https://github.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/blog/",
+  baseUrl: "/blog",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -37,23 +37,24 @@ const config = {
 
   presets: [
     [
-      "classic",
+      "@docusaurus/preset-classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
+
       ({
         docs: {
+          routeBasePath: "/",
           sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/wldyd123/blog",
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
+        blog: false,
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl: "https://github.com/wldyd123/blog",
+        // },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -73,15 +74,9 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
+          // { to: "/blog", label: "Blog", position: "left" },
           {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "left",
-            label: "Tutorial",
-          },
-          { to: "/blog", label: "Blog", position: "left" },
-          {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/wldyd123/blog",
             label: "GitHub",
             position: "right",
           },
@@ -103,16 +98,8 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                label: "instagram",
+                href: "https://www.instagram.com/wldyd123/",
               },
             ],
           },
@@ -130,7 +117,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} wldyd123, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
